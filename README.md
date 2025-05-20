@@ -47,9 +47,23 @@ python wine_assignment_solver.py examples/test.txt
 Input should be a TSV (tab-separated) file with the format:
 
 ```
-person0    wine1499157
-person0    wine1243060
-person1    wine1036086
+person0	wineA
+person0	wineB
+person0	wineC
+person0	wineD
+person0	wineE
+person0	wineF
+person0	wineG
+person0	wineH
+person0	wineI
+person0	wineJ
+
+person1	wineB
+person1	wineC
+person1	wineD
+person1	wineK
+person1	wineL
+person1	wineM
 ...
 ```
 
@@ -65,12 +79,12 @@ Each line represents a wine preference: a person ID and a wine ID.
 ### Example Output:
 
 ```
-5
-person0    wine1499157
-person1    wine1036086
-person1    wine429577
-person2    wine544242
-person3    wine1005530
+15
+person0 wineA
+person0 wineB
+person0 wineC
+person1 wineD
+person1 wineK
 ```
 
 ---
