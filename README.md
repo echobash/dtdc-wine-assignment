@@ -22,10 +22,17 @@ The solution reads a TSV file (tab-separated) and outputs a list of assignments.
 
 
 ## 📦 How to Run
-
 ```bash
-python wine_assignment_solver.py <path_to_input_file.tsv>
+python wine_assignment_solver.py test.txt
 ```
+
+## 📦 How to Run locally with sample file
+```bash
+python wine_assignment_solver.py test.txt
+```
+
+I've the sample input file with 5 people, each having 10 wine preferences test.txt— perfect for verifying your logic locally:
+
 
 ### Example:
 
