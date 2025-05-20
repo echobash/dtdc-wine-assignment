@@ -1,0 +1,54 @@
+person0	wineA
+person0	wineB
+person0	wineC
+person0	wineD
+person0	wineE
+person0	wineF
+person0	wineG
+person0	wineH
+person0	wineI
+person0	wineJ
+
+person1	wineB
+person1	wineC
+person1	wineD
+person1	wineK
+person1	wineL
+person1	wineM
+person1	wineN
+person1	wineO
+person1	wineP
+person1	wineQ
+
+person2	wineA
+person2	wineR
+person2	wineS
+person2	wineT
+person2	wineU
+person2	wineV
+person2	wineW
+person2	wineX
+person2	wineY
+person2	wineZ
+
+person3	wineM
+person3	wineN
+person3	wineO
+person3	wineP
+person3	wineAA
+person3	wineBB
+person3	wineCC
+person3	wineDD
+person3	wineEE
+person3	wineFF
+
+person4	wineF
+person4	wineG
+person4	wineH
+person4	wineI
+person4	wineJ
+person4	wineK
+person4	wineL
+person4	wineM
+person4	wineN
+person4	wineO
