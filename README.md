@@ -20,19 +20,23 @@ The solution reads a TSV file (tab-separated) and outputs a list of assignments.
 
 2. Make sure you have Python 3 installed.
 
+---
 
 ## 📦 How to Run
+
 ```bash
 python wine_assignment_solver.py test.txt
 ```
 
-## 📦 How to Run locally with sample file
+---
+
+## 📦 How to Run Locally with Sample File
+
 ```bash
 python wine_assignment_solver.py test.txt
 ```
 
-I've the sample input file with 5 people, each having 10 wine preferences test.txt— perfect for verifying your logic locally:
-
+I've included the sample input file with 5 people, each having 10 wine preferences (`test.txt`) — perfect for verifying your logic locally:
 
 ### Example:
 
@@ -80,12 +84,34 @@ Each line represents a wine preference: a person ID and a wine ID.
 
 ```
 15
-person0 wineA
-person0 wineB
-person0 wineC
-person1 wineD
-person1 wineK
+person0	wineA
+person0	wineB
+person0	wineC
+person1	wineD
+person1	wineK
 ```
+
+---
+
+## 🧠 Approach
+
+The problem is modeled as a bipartite matching task between people and wines:
+
+* Each person can be matched to up to 3 wines.
+* Each wine can be matched to only 1 person.
+
+We use a **greedy assignment algorithm** for this:
+
+* For each person, iterate through their preference list.
+* If the wine is not already assigned and the person has less than 3 wines, assign it.
+
+This approach ensures:
+
+* Fast performance even on very large files (up to GBs)
+* Linear time complexity: **O(N)**, where N = number of preferences (lines)
+* Simple code that adheres to constraints effectively
+
+No advanced graph algorithms like max-flow are used, as they are unnecessary and computationally heavy for this task.
 
 ---
 
@@ -105,3 +131,5 @@ This project only requires the Python standard library:
 * `collections`
 
 No external libraries are used.
+
+---
