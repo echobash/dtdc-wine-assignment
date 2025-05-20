@@ -110,9 +110,6 @@ This approach ensures:
 * Fast performance even on very large files (up to GBs)
 * Linear time complexity: **O(N)**, where N = number of preferences (lines)
 * Simple code that adheres to constraints effectively
-
-No advanced graph algorithms like max-flow are used, as they are unnecessary and computationally heavy for this task.
-
 ---
 
 ## ⚙️ Assumptions
